@@ -322,29 +322,25 @@ nav {
 
 
 #container-box {
-    position: relative;
-    display: flex;
-    height: auto;
-    width: auto;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 530px) {
     #container-box {
         position: relative;
-        display: flex;
-        flex-direction:column;
-        height: 100%;
-        width: 100%;
-        
-        
+        display: grid;
+        grid-template-columns: auto;
+         height: auto;
+        width: auto;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1060px) {
     #container-box {
         position: relative;
-        display: flex;
-        flex-direction:column;
+        display: grid;
+        grid-template-columns: 50% 50%;
          height: auto;
         width: auto;
     }
@@ -355,82 +351,93 @@ nav {
 
     height: 150px;
     width: 150px;
-    transform: translate(50%, 40%);
+    /* transform: translate(50%, 40%); */
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 530px) {
     .container-image-1 {
-         height: 75px;
-        width: 75px;
-        transform: translate(50%, 50%);
+         height: 100px;
+        width: 100px;
+        /* transform: translate(50%, 40%); */
+        
+        
         
     }
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
     .container-image-1 {
-         height: 100px;
-        width: 100px;
-        transform: translate(50%, 50%);
+         height: 150px;
+        width: 150px;
+        /* transform: translate(50%, 40%); */
         
     }
 }
 
 .container-1 {
 
+    display:flex;
+    justify-content: center;
+    align-self: center;
     overflow: none;
-    font-size: 20px;
-    width: 25%;
-    height: 80%;
+    font-size: 30px;
+    width: auto;
+    height: auto;
     background-color: rgb(54, 185, 142);
 }
 
 
 
-@media (max-width: 300px) {
+@media (max-width: 530px) {
     .container-1 {
 
+        display:flex;
+        justify-content: center;
+        align-self: center;
         overflow: none;
-        background-size: cover;
-        object-fit:cover;
-        font-size: 16px;
-        width: auto;
-        height: auto;
+        font-size: 15px;
+        width: 100%;
+        height: 100%;
         background-color: rgb(54, 185, 142);
     }
     
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
     .container-1 {
        
+        display:flex;
+        justify-content: center;
         overflow: none;
-        background-size: cover;
-        object-fit:cover;
-        font-size: 12px;
-        width: auto;
-        height: auto;
+         background-size: cover;
+         object-fit:cover;
+         font-size: 22px;
+         width: auto;
+         height: auto;
         background-color: rgb(54, 185, 142);
     }
     
 }
 
 .container-2 {
-    overflow: hidden;
-    width: 25%;
-    background-size: cover;
-        object-fit:cover;
-    height: 80%;
-    background-color: rgb(71, 121, 77);
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    overflow: none;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    background-color: rgb(105, 146, 132);
 
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 530px) {
     .container-2 {
         overflow: hidden;
+        font-size: 16px;
         width: auto;
         height: auto;
         background-size: cover;
@@ -440,7 +447,7 @@ nav {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
     .container-2 {
         overflow: hidden;
         width: auto;
@@ -454,14 +461,19 @@ nav {
 }
 
 .container-3 {
-    overflow: hidden;
-    width: 25%;
-    height: 80%;
-    background-color: rgb(163, 131, 79);
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    overflow: none;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    background-color: rgb(54, 185, 93);
 }
-@media (max-width: 300px) {
+@media (max-width: 530px) {
     .container-3 {
         overflow: hidden;
+        font-size:16px;
         width: auto;
         height: auto;
         background-size: cover;
@@ -470,7 +482,7 @@ nav {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
     .container-3 {
         overflow: hidden;
         width: auto;
@@ -485,15 +497,20 @@ nav {
 
 
 .container-4 {
-    overflow: hidden;
-    width: 25%;
-    height: 80%;
-    background-color: rgb(199, 136, 173);
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    overflow: none;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    background-color: rgb(54, 185, 142);
 }
 
-@media (max-width: 300px) {
+@media (max-width: 530px) {
     .container-4 {
         overflow: hidden;
+        font-size:16px;
         width: auto;
         height: auto;
         background-size: cover;
@@ -502,7 +519,7 @@ nav {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
     .container-4 {
         overflow: hidden;
         width: auto;
@@ -525,21 +542,21 @@ nav {
 
 }
 
-@media (max-width: 300px) {
+@media (max-width: 530px) {
     .container-text-1 {
-        font-size: 20px;
+        font-size: 14px;
         height: 150px;
         width: 150 px;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding-left: 10px;
+        
     
     }
     
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
     .container-text-1 {
         font-size: 10px;
         height: 200px;
@@ -548,7 +565,7 @@ nav {
         flex-direction: row;
         justify-content: center;
         flex-direction: column;
-        padding-left: 25%;
+        
     
     }
     
